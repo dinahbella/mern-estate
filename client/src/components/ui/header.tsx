@@ -1,4 +1,4 @@
-import Link from "next/link";
+import SignIn from "@/app/component/signin";
 import React from "react";
 import { AiFillMacCommand } from "react-icons/ai";
 
@@ -9,28 +9,7 @@ const Header = () => {
         <AiFillMacCommand className="text-6xl ml-2 text-blue-700" />
         <h4 className="font-bold">RealEstate</h4>
       </div>
-      {/* <input
-        type="search"
-        name="search"
-        placeholder="search"
-        className="focus:outline-none rounded-md h-8"
-      /> */}
-      <div className="flex gap-4">
-        <Link
-          href={"/signin"}
-          className="bg-blue-500 px-4 py-3 hover:bg-blue-900 hover:scale-105 transition-all duration-300 ease-in-out
-           text-white rounded-md"
-        >
-          Login
-        </Link>
-        <Link
-          href={"/signup"}
-          className="bg-blue-500 px-4 py-3 
-           hover:bg-blue-900 hover:scale-105 transition-all duration-300 ease-in-out text-white rounded-md"
-        >
-          Sign Up
-        </Link>
-      </div>
+      <SignIn />
     </div>
   );
 };
